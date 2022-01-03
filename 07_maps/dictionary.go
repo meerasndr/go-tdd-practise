@@ -37,7 +37,7 @@ func (d Dictionary) Add(word, definition string) error {
 
 func (d Dictionary) Update(word, definition string) error {
 	_, err := d.Search(word)
-	if err == ErrNotFound{
+	if err == ErrNotFound {
 		return ErrWordDoesNotExist
 	}
 
